@@ -134,10 +134,10 @@ public class HomePage extends BasePage{
 	@FindBy(xpath="//a[(@title=\"Logout\")]")
 	public WebElement eLogOut ;
 	
-	//@FindBy()
-	//public WebElement  ;
 	
 	
+	
+}
 									
 	
 	
@@ -152,4 +152,4 @@ public class HomePage extends BasePage{
 	
 	
 	
-}
+
