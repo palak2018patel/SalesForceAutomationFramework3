@@ -11,7 +11,7 @@ public class Home extends BaseTest {
 	}
 	
 	@Test
-	public void HomePage_TC_034() {
+	public void HomePage_TC_032() {
 		
 		
 	}
