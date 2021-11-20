@@ -5,14 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PlusAllPage extends BasePage{
+import sfdc.tests.BaseTest;
+
+public class AllTabPage extends BaseTest{
 	
-	public PlusAllPage(WebDriver driver) {
+	public AllTabPage(WebDriver driver) {
 		PageFactory.initElements(driver,this);//constructor
 	}
 
 	@FindBy(xpath="//img[(@class='allTabsArrow')]")
-	public WebElement ePlusAllTab ;
+	public WebElement eAllTab ;
+	
 	
 	@FindBy(xpath="//input[(@name='customize')]")
 	public WebElement eCustomizeMyTab ;
@@ -47,7 +50,8 @@ public class PlusAllPage extends BasePage{
 	@FindBy(xpath="//img[(@class='monthViewIcon')]")
 	public WebElement eMonthView;
 	
-	
+	@FindBy(xpath="//a[(@title='Chatter Tab')]")
+	public WebElement eChatterTabOnBar;
 	
 }
 	

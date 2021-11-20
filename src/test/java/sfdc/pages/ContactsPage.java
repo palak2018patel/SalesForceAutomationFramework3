@@ -17,6 +17,8 @@ public class ContactsPage extends BasePage{
 	@FindBy(xpath="//*[@id=\"filter_element\"]/div/span/span[2]/a[2]")
 	public WebElement eNewView;
 	
+	@FindBy(xpath="//input[(@name=\"name_lastcon2\")]")
+			public WebElement eLastName;	
 	
 	@FindBy(xpath="//input[(@id='fname')]")
 	public WebElement eViewName;
@@ -36,7 +38,7 @@ public class ContactsPage extends BasePage{
 	@FindBy(xpath="//select[(@id='fcf')]")
 	public WebElement eVIewDropDown ;
 	
-	@FindBy(xpath="//*[@id=\"00B5f00000Bs119_listSelect\"]/option[5]")
+	@FindBy(xpath="//option[(@value=\"00B5f00000Bs119\")]")
 	public WebElement eMyContacts;
 	
 	@FindBy(xpath="//a[(@href='/0035f000007YIUK')]")
@@ -44,6 +46,13 @@ public class ContactsPage extends BasePage{
 	
 	@FindBy(xpath="//*[@id=\"filter_element\"]/div/span/span[2]/a[2]")
 	public WebElement eCreateNewView;
+	
+	@FindBy(xpath="//div[(@class=\"errorMsg\")]")
+	public WebElement eViewNameErrorMsg;
+	@FindBy(xpath="//div[(@class=\"pbError\")]")
+	public WebElement invalidEntryErr;
+	@FindBy(xpath="//div[(@class=\"errorMsg\")]")
+	public WebElement invalidEntryError;
 	
 	@FindBy(xpath="//input[(@title='Cancel')]")
 	public WebElement eCancel;
@@ -54,5 +63,7 @@ public class ContactsPage extends BasePage{
 	@FindBy(xpath="//input[(@title='Save & New')]")
 	public WebElement eSaveAndNew;
 	
+	@FindBy(xpath="//input[(@title='New')]")
+	public WebElement eNew;
 }
 	

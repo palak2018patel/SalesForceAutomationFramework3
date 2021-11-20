@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import sfdc.configs.TestConstants;
+import sfdc.tests.BaseTest;
 public class DataUtilities {
 	
 	

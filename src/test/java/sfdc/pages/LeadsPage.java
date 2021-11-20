@@ -19,6 +19,9 @@ public class LeadsPage extends BasePage{
 	@FindBy(xpath="//input[(@title='Go!')]")
 	public WebElement eGOLeads ;
 	
+	@FindBy(xpath="//option[(@value=\"00B5f00000Bs10S\")]")
+	public WebElement eTodaysLead;
+	
 	@FindBy(xpath="//input[(@title='New')]")
 	public WebElement eNewLeads ;
 	
@@ -34,11 +37,25 @@ public class LeadsPage extends BasePage{
 	@FindBy(xpath="//input[(@id='con4')]")
 	public WebElement eAccountName ;
 	
+	@FindBy(xpath="//*[@id=\"userNav\"]")
+	public WebElement eUserMenu;
+
+	@FindBy(xpath="//*[@id=\"userNav-menuItems\"]/a[5]")
+	public WebElement eLogOut;
+	
+	@FindBy(xpath="//img[(@class='pageTitleIcon')]")
+	public WebElement eLeadIcon ;
+		
+	@FindBy(xpath="//td[(@id='bodyCell')]")
+		public WebElement eLeadsGoPage ;
+			
 	//@FindBy()
-	//public WebElement  ;
+		//public WebElement  ;
+		
 	
-	
-	
+	//@FindBy()
+		//public WebElement  ;
+		
 	
 	
 	

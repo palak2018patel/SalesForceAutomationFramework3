@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends BasePage{
+import sfdc.tests.BaseTest;
+
+public class HomePage extends BaseTest{
 	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver,this);//constructor
@@ -36,13 +38,16 @@ public class HomePage extends BasePage{
 	public WebElement eSaveAllButton;
 	
 	@FindBy(xpath="//*[@id=\"publisherAttachTextPost\"]/span[1]")
-	public WebElement ePostLinkButton;
+	public WebElement ePostLinkButton;	
 	
 	@FindBy(xpath="//iframe[(@class='cke_wysiwyg_frame cke_reset')]")
 	public WebElement eMyFrame2;
 	
 	@FindBy(xpath="/html/body")
 	public WebElement eTextBox;
+	
+	@FindBy(xpath="//input[(@id='publishersharebutton')]")
+	public WebElement eShare;
 	
 	@FindBy(xpath="//*[@id=\"publisherAttachContentPost\"]/span[1]")
 	public WebElement eFileLinkbutton ;
@@ -69,7 +74,7 @@ public class HomePage extends BasePage{
 	public WebElement eMysettings ;
 	
 	
-	@FindBy(id="PersonalInfo")
+	@FindBy(xpath="//span[(@id=\"PersonalInfo_font\")]")
 	public WebElement ePersonalLink;
 	
 	

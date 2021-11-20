@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+
+<test name="Home">
+
+
+<classes>
+
+
+<class name="sfdc.tests.Contacts">
+
+
+<methods>
+
+<include name="CreateNewContact_TC25"/>
+
+<include name="createNewViewInContact_TC26"/>
+
+<include name="checkRecentlyCreatedContact_TC27"/>
+
+<include name="checkMyContactsView_TC28"/>
+
+<include name="ViewAcontact_TC29"/>
+
+<include name="checkErrorMessage_TC30"/>
+
+<include name="checkCancelButton_TC31"/>
+
+<include name="checkSaveAndNewButtonInNewContact_TC32"/>
+
+</methods>
+
+</class>
+
+</classes>
+
+</test>
+
+</suite>

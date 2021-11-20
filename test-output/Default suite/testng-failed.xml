@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="parallelTest.CrossBrowserScript">
+      <class name="sfdc.tests.Home">
         <methods>
-          <include name="setup"/>
-          <include name="testParameterWithXML"/>
+          <include name="setUp"/>
+          <include name="loginToApp"/>
+          <include name="select_MyProfile_In_usermenu_TC06"/>
+          <include name="finishTest"/>
         </methods>
-      </class> <!-- parallelTest.CrossBrowserScript -->
+      </class> <!-- sfdc.tests.Home -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
